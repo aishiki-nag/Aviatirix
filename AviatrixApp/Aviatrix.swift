@@ -10,8 +10,18 @@ import Foundation
 
 class Aviatrix {
     
-    func start() -> Bool {
-        return true
+    var author = ""
+    init(myAuthor: String){
+        author = myAuthor
+    }
+    //this unction should tell us if the plane is running or not
+    
+    var running = false
+    
+    // Starts the airplane so it means its running
+    func start() -> Bool { // Bool stands for Booleans which means true or false
+       running = true
+        return running
     }
     
     func refuel() {
